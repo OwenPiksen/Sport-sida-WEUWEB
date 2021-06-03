@@ -39,6 +39,23 @@ background: -webkit-linear-gradient(white, lightgrey, lightBlue);
   font-size: 30px;
 }
 
+header > nav
+{
+	/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: cornflowerblue;
+  text-align: center;
+  padding: 20px 18px;
+  text-decoration: none;
+  font-size: 21px;
+}
+/* Change the color of links on hover */
+nav a:hover {
+  background-color: #ddd;
+  color: -webkit-linear-gradient(Red, Purple);
+}
+
 h1 {
       /*This is to make the h1 tags colored with a gradient*/
   font-size: 40px;
@@ -65,38 +82,10 @@ p {
   text-align: center;
 }
 
-/* This is for the menu bar */
-/* It removes the background color to the top navigation */
-.topnav {
-  background-color: -webkit-linear-gradient(Red, Purple, MidnightBlue);
-  overflow: hidden;
-  align-self: center;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: cornflowerblue;
-  text-align: center;
-  padding: 20px 18px;
-  text-decoration: none;
-  font-size: 21px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: -webkit-linear-gradient(Red, Purple);
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
 img{
   border-radius: 30px;
 }
+
 
 
   /*This document has been programed by Owen Julian John Piksen*/
