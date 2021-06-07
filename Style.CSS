@@ -14,7 +14,7 @@ main {
   grid-area: main;
 }
 section {
-  grid-area: right;
+  grid-area: section;
 }
 footer {
   grid-area: footer;
@@ -25,7 +25,7 @@ footer {
   grid-template-areas:
     'header header header header header header'
     'menu main main main main main'
-    'footer footer footer footer footer footer';
+    'footer footer footer footer footer section';
   grid-gap: 10px;
   background-color: Black;
   border-radius: 10px;
@@ -33,7 +33,7 @@ footer {
 }
 
 .grid-container > main,.grid-container > nav,.grid-container > header,.grid-container > footer {
-background: -webkit-linear-gradient(white, lightgrey, lightBlue);
+  background: -webkit-linear-gradient(white, lightgrey, lightBlue);
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
@@ -41,19 +41,24 @@ background: -webkit-linear-gradient(white, lightgrey, lightBlue);
 
 header > nav
 {
-	/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: cornflowerblue;
-  text-align: center;
-  padding: 20px 18px;
-  text-decoration: none;
-  font-size: 21px;
+      /* Style the links inside the navigation bar */
+  nav {
+    float: left;
+    color: cornflowerblue;
+    text-align: center;
+    padding: 20px 18px;
+    text-decoration: none;
+    font-size: 21px;
+  }
 }
-/* Change the color of links on hover */
+      /* Change the color of links on hover */
 nav a:hover {
   background-color: #ddd;
-  color: -webkit-linear-gradient(Red, Purple);
+  color: cornflowerblue;
+}
+
+section {
+  background-color: darkkhaki;
 }
 
 h1 {
@@ -81,11 +86,11 @@ p {
   -webkit-text-fill-color: transparent;
   text-align: center;
 }
-
+      /*This is to add round corners to all img's*/
 img{
   border-radius: 30px;
 }
 
 
 
-  /*This document has been programed by Owen Julian John Piksen*/
+      /*This document has been programed by Owen Julian John Piksen*/
