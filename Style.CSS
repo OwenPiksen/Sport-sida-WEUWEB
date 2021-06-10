@@ -1,7 +1,20 @@
 /* CSS Document */
 
-
-
+      /* This changes the background color on the background of the website */
+html
+{
+  background-image: url("https://static.wikia.nocookie.net/poofesure/images/6/6a/Cutefishsticks.jpg/revision/latest?cb=20200208024440");
+  background-color: #cccccc;
+  background-size: cover;
+}
+      /* This makes the body of the page the same on all websites. */
+body
+{
+  max-width: 1000px;
+  max-height: 1000px;
+  margin: auto;
+  
+}
 header
 {
   grid-area: header;
@@ -14,7 +27,7 @@ main {
   grid-area: main;
 }
 section {
-  grid-area: right;
+  grid-area: section;
 }
 footer {
   grid-area: footer;
@@ -25,67 +38,106 @@ footer {
   grid-template-areas:
     'header header header header header header'
     'menu main main main main main'
-    'footer footer footer footer footer footer';
+    'footer footer footer footer footer section';
   grid-gap: 10px;
   background-color: Black;
   border-radius: 10px;
   padding: 10px;
 }
 
-.grid-container > main,.grid-container > nav,.grid-container > header,.grid-container > footer {
-background: -webkit-linear-gradient(white, lightgrey, lightBlue);
+.grid-container > main,.grid-container > nav,.grid-container > header,.grid-container > footer, .grid-container > div{
+  background: -webkit-linear-gradient(rgb(255, 255, 255), lightgrey, lightBlue);
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
 }
-
-header > nav
+      /* This makes the menu into a menu insted of a list */
+header > nav > ul
 {
-	/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: cornflowerblue;
-  text-align: center;
-  padding: 20px 18px;
-  text-decoration: none;
-  font-size: 21px;
+    display: flex;
+    list-style-type: none;
+
 }
-/* Change the color of links on hover */
+      /* This makes a space between the items in the menu */
+nav li{
+  margin: 10px;
+}
+
+nav + div{
+      /* Style the links inside the navigation bar */
+    float: left;
+    color: cornflowerblue;
+    text-align: center;
+    padding: 20px 18px;
+    text-decoration: none;
+    font-size: 21px;
+    background: -webkit-linear-gradient(white, lightgrey, lightBlue);
+}
+      /* Change the color of links on hover */
 nav a:hover {
   background-color: #ddd;
-  color: -webkit-linear-gradient(Red, Purple);
+  color: cornflowerblue;
+}
+
+section {
+  background-color: darkkhaki;
 }
 
 h1 {
       /*This is to make the h1 tags colored with a gradient*/
   font-size: 40px;
-  background: -webkit-linear-gradient(MidnightBlue, Navy);
+  background: linear-gradient(MidnightBlue, Red);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
 }
 
+#Namn{
+  color: -webkit-linear-gradient(orange, blue, salmon);
+}
+
 h2 {
       /*This is to make the h2 tags colored with a gradient*/
   font-size: 25px;
-  background: -webkit-linear-gradient(MidnightBlue, Navy);
+  background: -webkit-linear-gradient(MidnightBlue, red);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
 }
 p {
       /*This is to make the h2 tags colored with a gradient*/
-  font-size: 15px;
+  font-size: 1em;
   background: -webkit-linear-gradient(MidnightBlue, Red);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
 }
-
+      /*This is to add round corners to all img's*/
 img{
   border-radius: 30px;
+  width: 100%;
+  height: auto;
+}
+
+a:link { 
+  color: #660;;
+}
+
+a:visited { 
+  color: #040;
 }
 
 
+a:hover, a:focus { 
+  color: #054;
+}
 
-  /*This document has been programed by Owen Julian John Piksen*/
+a:active { 
+  color: rgb(23,224,234);
+}
+
+table, th, td{
+  border:5px solid peru;
+  border-collapse: collapse;
+}
+      /*This document has been programed by Owen Julian John Piksen*/

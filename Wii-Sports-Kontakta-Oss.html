@@ -1,47 +1,117 @@
 <!DOCTYPE html>
 
-  <html lang="sv">
-  <head>
-    <meta charset="utf-8">
+<html lang="sv">
 
-    <title>Wii Sports</title>
+<head>
+    <meta charset="utf-8">
+    <title>Wii Sport Kontakta oss</title>
     <meta name="Wii Sport website" content="Wii Sports">
     <meta name="Owen Piksen" content="SitePoint">
-
     <link rel="stylesheet" href="Style.CSS">
 
 </head>
-    <body>
-        <div class="grid-container">
-        <header>
-        <h1>Kontakta Oss</h1>
-          <nav>
-			<a href="index.html">Homepage</a>
-            <a href="Baseball-Page.html">Baseball</a>
-            <a href="Tennis-Page.html">Tennis</a>
-            <a href="Wii-Sports-Om-oss-Page.html">Om oss</a>
-            <a href="Golf-Page.html">Golf</a>
-            <a href="Bowling-Page.html">Bowling</a>
-            <a href="Boxning-Page.html">Boxning</a>
-          </nav>
-        </header>
-                    <Nav>
-                      <ul>
-                        <li><a href="Wii Sports Information.html">Information</a></li>
-                        <li><a href="Wii Sports Kontakta Oss.html">Kontakta Oss</a></li>
-                      </ul>
-                    </Nav>
-              <main>
-                <img src="https://lh3.googleusercontent.com/proxy/FCofITgnoCHpi7BX2MNBU4XMbhHQs79MQIrWjNUDaiofd-GgUX5IdWerrRge1sCw-4-V7WEqaaD5GHOzXZ2hLOGAo8VysOQS0vkDgZku8HR_hTA3YPxcTSfNkizumT-4MDk4qgWBlTe9Gg" alt="Wii Sports Spel">
-              </main>
-              <footer>
-                <h2>  Detta är Owens website. </h2>
-                  <img src="https://web.archive.org/web/20091026223346/http://geocities.com/phkerourio/_borders/ICONE_EN_CONSTRUCTION.GIF" alt="Under Construction">
-              </footer>
-          </div>
 
-    </body>
-    <section>
-    </section>
-    <!-- This document has been programed by Owen Julian John Piksen -->
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>Kontakta Oss</h1>
+            <nav>
+                <ul>
+                    <li><a href="Baseball-Page.html">Baseball</a></li>
+                    <li><a href="Tennis-Page.html">Tennis</a></li>
+                    <li><a href="Wii-Sports-Om-oss-Page.html">Om oss</a></li>
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="Golf-Page.html">Golf</a></li>
+                    <li><a href="Bowling-Page.html">Bowling</a></li>
+                    <li><a href="Boxning-Page.html">Boxning</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div>
+            <Nav>
+                <ul>
+                    <li><a href="Wii-Sports-Information.html">Information</a></li>
+                    <li><a href="Wii-Sports-Kontakta-Oss.html">Kontakta Oss</a></li>
+                </ul>
+            </Nav>
+        </div>
+
+        <main>
+
+            <table>
+                <tr> 
+                    <th scope="col">Namn</th>
+                    <th scope="col">Mail</th>
+                    <th scope="col">Telephone</th>
+                </tr>
+                <tr>
+                    <td>Owen</td>
+                    <td>Owen@gmail.com</td>
+                    <td>1323423</td>
+                </tr>
+                <tr>
+                    <td>Bert</td>
+                    <td>Bert@gmail.com</td>
+                    <td>1324563</td>
+                </tr>     
+            </table>
+        </main>
+
+        <section>
+            <h2> Kontakta oss </h2>
+            <form id="fcf-form-id" class="fcf-form-class" method="post" action="Wii-Sports-Kontakta-Oss.html">
+                <label for="Name" class="fcf-label">Your name</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                </div>
+
+                <div class="fcf-form-group">
+                    <label for="Email" class="fcf-label">Your email address</label>
+                    <div class="fcf-input-group">
+                        <input type="email" id="Email" name="Email" class="fcf-form-control"
+                            placeholder="example@example.org" required>
+                    </div>
+                </div>
+
+                    <div class="frc-form-group">
+                        <label for="Password" class="fcf-label">Your email Adress Password</label>
+                        <input type="password" id="Password" name="Password">
+                    </div>
+
+                    <div class="fcf-form-group">
+                        <label for="Message" class="fcf-label">Your message</label>
+                        <div class="fcf-input-group">
+                            <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000"
+                                required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="frc-form-group">
+                        <input type="radio" value="Man" name="Gender" id="Man"> <label for="Man"> Man </label>
+                        <input type="radio" value="woman" name="Gender" id="woman"> <label for="woman"> Woman </label>
+                    </div>
+
+                    <div class="fcf-form-group">
+                        <input type="submit" value="Send">
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox" value="Yes" name="TOU" id="TOU" checked> <label for="TOU"> Terms of Usage </label> 
+                    </div>                    
+                    
+            </form>
+        </section>
+
+        <footer>
+            <h2> Detta är Owens website. </h2>
+            <img src="https://web.archive.org/web/20091026223346/http://geocities.com/phkerourio/_borders/ICONE_EN_CONSTRUCTION.GIF"
+                alt="Under Construction">
+        </footer>
+
+    </div>
+
+</body>
+<!-- This document has been programed by Owen Julian John Piksen -->
+
 </html>
